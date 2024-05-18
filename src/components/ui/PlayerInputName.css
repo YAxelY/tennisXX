@@ -1,0 +1,26 @@
+/* PlayerInputName.css */
+.playerInputName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playerInputName label {
+  margin-bottom: 5px;
+}
+
+.inputline {
+  border: none;
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+  padding: 5px;
+  width: 200px; /* Set a width for the input */
+  text-align: center; /* Center the text */
+  transition: border-bottom-color 0.3s; /* Add a smooth transition for the border color change */
+  background-color: white;
+  color:black;
+}
+
+.inputline:focus {
+  outline: none;
+  border-bottom-color: #007bff; /* Change the bottom border color on focus */
+}

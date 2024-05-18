@@ -4,10 +4,11 @@ import './Home.css';
 
 const Home: React.FC = () => {
   return (
+    <div>
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Hello</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
         <ExploreContainer />
       </IonContent>
     </IonPage>
+    </div>
   );
 };
 

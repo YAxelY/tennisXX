@@ -1,0 +1,43 @@
+/* CSS */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #0000ff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.status-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.scoreboard {
+  background-color: #ffffff;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddddd;
+  padding: 10px;
+}

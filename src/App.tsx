@@ -1,7 +1,17 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+// import { Redirect, Route } from 'react-router-dom';
+import {
+  IonApp,
+  IonIcon,
+  IonLabel,
+  IonRouterOutlet,
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
+  setupIonicReact
+} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import { ellipse, square, triangle } from 'ionicons/icons';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -35,19 +45,29 @@ import './theme/variables.css';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import NameEntryPage from './pages/NameEntryPage';
+import MatchManagementPage from './pages/MatchManagementPage';
+import GameManagementPage from './pages/GameManagementPage';
+import ScoreDisplayPage from './pages/ScoreDisplayPage';
+import Home from './pages/Home';
+
+
+const App: React.FC = () => {
+  return (
+    <Router>
+    <Switch>
+      <Route path="/" component={HomePage} exact />
+      <Route path="/name-entry" component={NameEntryPage} exact />
+      <Route path="/match-management" component={MatchManagementPage} exact />
+      <Route path="/game-management" component={GameManagementPage} exact />
+      <Route path="/score-display" component={ScoreDisplayPage} exact />
+      <Route component={Home} /> {/* Render Home component for unmatched routes */}
+    </Switch>
+  </Router>
+  );
+};
 
 export default App;
