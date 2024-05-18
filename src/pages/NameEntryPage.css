@@ -1,0 +1,39 @@
+.NameEntryPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:95vw;
+    height:99vh;
+    justify-content: center;
+    gap:35px
+  }
+  
+  .playerNameInput {
+    margin-bottom: 20px;
+    border:none;
+    color: red;
+  }
+  .labelText{
+    size: 16px;
+    color:black;
+  }
+  .playerNameInput label {
+    margin-right: 10px;
+    border:none;
+    color: red;
+  }
+  
+  .validateButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .validateButton:hover {
+    background-color: #0056b3;
+  }
+  

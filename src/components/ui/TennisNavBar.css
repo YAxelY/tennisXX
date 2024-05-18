@@ -1,0 +1,10 @@
+/* Home.css */
+.tennisNavBar {
+  background-color: blue; /* Background color for the navbar */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the navbar */
+}
+
+.brandName {
+  font-size: 24px; /* Font size for the brand name */
+}

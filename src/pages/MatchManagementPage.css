@@ -1,0 +1,48 @@
+/* CSS */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color:black;
+  gap:10%;
+}
+
+.header {
+  background-color:blue;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.scoreboard {
+  background-color: #f0f0f0;
+  flex-grow: 1;
+  padding: 10px;
+}
+.matchTitle{
+  display: flex;
+  justify-content: center;
+}
+
+.set {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 10px;
+}
+
+.scores {
+  display: flex;
+  justify-content:space-around;
+  gap: 10px;
+  width:75%;
+}
+
+.enter-game {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color:black
+}
